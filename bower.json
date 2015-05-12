@@ -1,0 +1,19 @@
+{
+  "name": "Personal Website",
+  "version": "0.0.0",
+  "authors": [
+    "Ivan Uvarov <tonk2012@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "http://ivn.io/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}

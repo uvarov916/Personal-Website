@@ -1,0 +1,20 @@
+// ------------------------------------
+// Fonts
+// ------------------------------------
+
+$font-stack--primary: "proxima-nova", "Proxima Nova", "Open Sans", "Gill Sans MT", "Gill Sans", Corbel, Arial, sans-serif;
+
+$font-weight--light: 300;
+$font-weight--normal: 400;
+$font-weight--bold: 600;
+
+
+// ------------------------------------
+// Colors
+// ------------------------------------
+
+$color__white-replacement: white;
+
+$color__text-color--primary: #536777; // for paragraphs
+$color__text-color--headline: $color__text-color--primary; // for headlines
+$color__text-color--link: #469DE5; // for links
