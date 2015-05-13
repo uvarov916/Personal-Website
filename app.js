@@ -1,7 +1,7 @@
 var Hapi = require('hapi');
 var Path = require('path');
 
-var port = process.env.PORT || 80;
+var port = process.env.PORT || 3000;
 var server = new Hapi.Server();
 server.connection({port: port});
 
@@ -13,9 +13,11 @@ server.views({
   path: './views'
 });
 
+server.path(__dirname);
+
 server.route({    // Other assets If you have
     method: 'GET',
-    path: '/public/{param*}',
+    path:  '/public/{param*}',
     handler: {
       directory: {
           path: './public',
