@@ -6,18 +6,9 @@ var startFile = 'app.js';
 
 var tmpDir = appName+'-' + new Date().getTime();
 
-// configuration
-plan.target('staging', [
-  {
-    host: '104.131.93.214',
-    username: username,
-    agent: process.env.SSH_AUTH_SOCK
-  }
-]);
-
 plan.target('production', [
   {
-    host: '104.131.163.124',
+    host: '45.55.198.186',
     username: username,
     agent: process.env.SSH_AUTH_SOCK
   },

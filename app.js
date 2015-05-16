@@ -15,19 +15,20 @@ server.views({
 
 server.path(__dirname);
 
-server.route({    // Other assets If you have
-    method: 'GET',
-    path:  '/public/{param*}',
-    handler: {
-      directory: {
-          path: './public',
-          listing: false,
-          index: true
-      }
-    }
-});
+// Getting assets
+// server.route({
+//     method: 'GET',
+//     path:  '/public/{param*}',
+//     handler: {
+//       directory: {
+//           path: './public',
+//           listing: false,
+//           index: true
+//       }
+//     }
+// });
 
-
+// Home page
 server.route({
   method: 'GET',
   path: '/',
@@ -36,6 +37,7 @@ server.route({
   }
 });
 
+// 404
 server.route({
   method: '*',
   path: '/{p*}',
